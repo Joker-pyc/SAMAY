@@ -2,45 +2,54 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="height=device-height, 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="height=device-height, 
                       width=device-width, initial-scale=1.0, 
                       minimum-scale=1.0, maximum-scale=1.0, 
                       user-scalable=no, target-densitydpi=device-dpi">
-    <title>My Web App</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <title>My Web App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="top-heading">
-        <h1>SAMAY</h1>
-        <div class="search-bar">
-            <input type="text" placeholder="Search...">
-            <button><i class="fas fa-search"></i></button>
-        </div>
+  <div class="top-heading">
+    <h1>SAMAY</h1>
+    <div class="search-bar">
+      <input type="text" placeholder="Search...">
+      <button><i class="fas fa-search"></i></button>
+    </div>
+  </div>
+
+  <div id="main-container">
+
+
+    <img id="image1" src="assets/image.PNG" alt="Samay" style="width: 100%; height: auto;">
+    <div class="modal-background">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <iframe id="login" class="login" src="login.html">
+        </iframe>
+      </div>
     </div>
 
-    <div id="main-container">
-        <!-- Your main content goes here -->
-        <!-- This container will have scrolling functionality -->
-    </div>
+  </div>
 
-    <div class="bottom-navigation">
-        <a href="#" class="nav-item">
-            <i class="fas fa-home"></i> Home
-        </a>
-        <a href="#" class="nav-item">
-            <i class="fas fa-search"></i> Search
-        </a>
-        <a href="#" class="nav-item">
-            <i class="fas fa-user"></i> Profile
-        </a>
-    </div>
+  <div class="bottom-navigation">
+    <a href="#" class="nav-item">
+      <i class="fas fa-home"></i> Home
+    </a>
+    <a href="#" class="nav-item">
+      <i class="fas fa-search"></i> Search
+    </a>
+    <a href="#" class="nav-item">
+      <i class="fas fa-user"></i> Profile
+    </a>
+  </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Any additional scripts can be included here -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Any additional scripts can be included here -->
 </body>
 
 </html>
