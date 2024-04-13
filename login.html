@@ -10,21 +10,35 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background-color: #f0f0f000;
        
         }
 
+        html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
         .container {
-            max-width: 400px;
-            margin: 100px auto;
-            background-color: #fff;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #000000;
+            border-radius: 0;
+            padding: 0;
+            box-shadow: none;
         }
 
         h1 {
-            text-align: center;
             margin-bottom: 20px;
         }
 
@@ -42,7 +56,7 @@
             padding: 10px;
             margin-bottom: 10px;
             border-radius: 5px;
-            border: 1px solid #ccc;
+            border: 1px solid #000000;
             outline: none;
         }
 
@@ -50,7 +64,7 @@
             padding: 10px;
             border-radius: 5px;
             border: none;
-            background-color: #4CAF50;
+            background-color: #14c41aa3;
             color: #fff;
             cursor: pointer;
         }
@@ -59,26 +73,23 @@
             background-color: #45a049;
         }
 
-        /* Glass door effect */
         .glass-door {
-            position: relative;
-            background: linear-gradient(145deg, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.1));
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(145deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.1));
+            border-radius: 0;
+            padding: 0;
+            box-shadow: none;
         }
 
         .glass-door:before {
-            content: '';
-            position: absolute;
-            top: -10px;
-            left: -10px;
-            right: -10px;
-            bottom: -10px;
-            background: inherit;
-            border-radius: inherit;
-            z-index: -1;
-            filter: blur(10px);
+            content: none;
         }
       
       /* Style scrollbar for WebKit browsers (Chrome, Safari) */
